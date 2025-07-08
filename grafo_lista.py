@@ -72,4 +72,4 @@ if __name__ == '__main__':
     for v in g.vertices.values():
         for w in v.getAdjLists():
             print(f"( {v.getId()} , {w.getId()} , {v.getWeight(w)} )")         
-print("¡Hola desde la rama mejora-grafo!")
+print("Modificado por rama-conflicto-a")

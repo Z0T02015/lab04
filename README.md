@@ -29,3 +29,41 @@ Se simuló un conflicto de Git trabajando con dos ramas distintas:
 5. Luego se finalizó la fusión con `git add` y un nuevo commit.
 
 Este paso demuestra cómo resolver conflictos de fusión colaborando (o simulándolo en solitario).
+
+
+## Punto 1: Recorrido de Grafos con DFS
+
+Se implementó el recorrido en profundidad (Depth First Search) sobre un grafo no dirigido con 8 vértices.
+
+Archivo: `dfs_traversal.py`
+
+Evidencia de salida (consola):
+
+Traversal: a  
+Traversal: b  
+Traversal: h  
+Traversal: e  
+Traversal: g  
+Traversal: f  
+Traversal: c  
+Traversal: d
+
+## Punto 2: Recorrido de Grafos con BFS
+
+Se implementó el recorrido en anchura (Breadth First Search) usando una estructura de cola.
+
+Archivo: `bfs_traversal.py`
+
+Evidencia:
+- Orden de recorrido: a → b → h → c → e → d → g → f
+- Se imprimieron las distancias desde el nodo `a` hacia todos los vértices.
+
+## Punto 3: Ruta más corta sin peso
+
+Se implementó un algoritmo de recorrido BFS para hallar la distancia mínima desde el nodo `'a'` a todos los demás nodos en un grafo **no ponderado**.
+
+Archivo: `shortest_path_unweighted.py`
+
+### Salida esperada: 
+
+Se utilizó el mismo grafo que en los puntos anteriores.
